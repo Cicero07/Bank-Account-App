@@ -1,0 +1,14 @@
+package com.techelevator.tenmo.dao;
+
+import com.techelevator.tenmo.model.BalanceDTO;
+import com.techelevator.tenmo.model.TransferDTO;
+
+import java.math.BigDecimal;
+import java.util.List;
+
+public interface AccountDao {
+
+    public BalanceDTO getBalance(String username);
+
+    public TransferDTO updateBalance(BigDecimal amount, String fromAccountName, String toAccountName);
+}
